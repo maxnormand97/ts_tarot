@@ -36,30 +36,30 @@
  ### Possible Features
  Deck Customization:
 
-Allow users to use custom decks or subsets of cards (e.g., only Major Arcana).
-Reversed Card Probability:
+    Allow users to use custom decks or subsets of cards (e.g., only Major Arcana).
+    Reversed Card Probability:
 
-Define the probability of a card appearing reversed (e.g., 50/50 or user-configurable).
-Spread Validation:
+    Define the probability of a card appearing reversed (e.g., 50/50 or user-configurable).
+    Spread Validation:
 
-Ensure the correct number of cards is drawn for each spread.
+    Ensure the correct number of cards is drawn for each spread.
 
-Card Replacement:
+    Card Replacement:
 
-Decide if cards are replaced back into the deck after drawing (e.g., for multiple readings).
+    Decide if cards are replaced back into the deck after drawing (e.g., for multiple readings).
 
-User Input Validation:
+    User Input Validation:
 
-Handle invalid inputs gracefully in the CLI (e.g., incorrect spread selection).
+    Handle invalid inputs gracefully in the CLI (e.g., incorrect spread selection).
 
-Card Interpretation:
+    Card Interpretation:
 
-Provide detailed interpretations for each card position in a spread.
+    Provide detailed interpretations for each card position in a spread.
 
-Shuffling Options:
+    Shuffling Options:
 
-Allow different shuffling methods (e.g., simple randomization, riffle shuffle simulation).
+    Allow different shuffling methods (e.g., simple randomization, riffle shuffle simulation).
 
-User Guidance:
+    User Guidance:
 
-Provide instructions or tips for interpreting spreads and meanings.
+    Provide instructions or tips for interpreting spreads and meanings.
