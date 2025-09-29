@@ -13,7 +13,7 @@ export class ThreeCardSpread implements Spread {
     this.majorArcanaCards = shuffle(this.majorArcanaCards);
   }
 
-  // Make it private
+  // TODO: make the output of the sexy
   private drawCard(context: string): MajorArcanaCard {
     if (this.majorArcanaCards.length === 0) {
       throw new Error("No cards left to draw!");
@@ -21,9 +21,22 @@ export class ThreeCardSpread implements Spread {
     const drawnCard = draw(this.majorArcanaCards); // Get a random card
     // Remove the drawn card from the deck
     this.majorArcanaCards = this.majorArcanaCards.filter(card => card !== drawnCard);
-    console.log("DECK COUNT", this.majorArcanaCards.length);
-    console.log(`${context} Card...`);
-    console.log(drawnCard, "YOU DREW")
+    // TODO: going to have to make this a shared presentation function.
+    console.log("========================================");
+    console.log(`🔮 ${context} Card Drawn!`);
+    console.log("========================================");
+    console.log(`✨ Name: ${drawnCard.name}`);
+    console.log(`🔀 Orientation: ${drawnCard.isReversed ? "Reversed" : "Upright"}`);
+    console.log(
+      `📖 Meaning: ${
+        drawnCard.isReversed ? drawnCard.reversedMeaning : drawnCard.uprightMeaning
+      }`
+    );
+    console.log("========================================");
+    console.log(`Remaining cards in the deck: ${this.majorArcanaCards.length}`);
+    console.log("========================================");
+    console.log("\n");
+
     return drawnCard;
   }
 

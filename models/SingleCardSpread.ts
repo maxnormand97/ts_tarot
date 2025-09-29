@@ -25,7 +25,21 @@ export class SingleCardSpread implements Spread {
     // Remove the drawn card from the deck
     this.majorArcanaCards = this.majorArcanaCards.filter(card => card !== drawnCard);
 
-    // TODO: we should have a presentation class here that displays it in a nice format...
+    console.log("========================================");
+    console.log("🔮Card Drawn!");
+    console.log("========================================");
+    console.log(`✨ Name: ${drawnCard.name}`);
+    console.log(`🔀 Orientation: ${drawnCard.isReversed ? "Reversed" : "Upright"}`);
+    console.log(
+      `📖 Meaning: ${
+        drawnCard.isReversed ? drawnCard.reversedMeaning : drawnCard.uprightMeaning
+      }`
+    );
+    console.log("========================================");
+    console.log(`Remaining cards in the deck: ${this.majorArcanaCards.length}`);
+    console.log("========================================");
+    console.log("\n");
+
     return drawnCard;
   }
 }
